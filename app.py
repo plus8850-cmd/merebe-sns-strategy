@@ -58,4 +58,4 @@ body_html = body_match.group(1) if body_match else html_raw
 
 # ── st.html()로 직접 주입 (iframe 없음, 높이 제한 없음) ─────────────────────
 # st.html()은 Streamlit 1.31+ 에서 지원, iframe 없이 페이지에 직접 렌더링
-st.html(font_links + "\n" + style_block + "\n" + body_html)
+st.html(font_links + "\n" + style_block + "\n" + body_html, width="stretch")
